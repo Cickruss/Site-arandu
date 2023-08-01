@@ -91,6 +91,9 @@ div.cardsQuemSomos{
     div.descricaoSobreNos{
         width: 300px;
     }
+    div.logoPrincipal{
+        background-attachment: scroll;
+    }
 }
 
 div.cards{
