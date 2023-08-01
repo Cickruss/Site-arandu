@@ -79,7 +79,7 @@ div.cardsQuemSomos{
 
 @media (max-width: 750px){
     section.paginaLogo{
-        height: 900px;
+        height: 600px;
     }
     div.cardsQuemSomos{
         display: grid;
