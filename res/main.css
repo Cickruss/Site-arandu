@@ -113,6 +113,7 @@ section.paginaProjetos{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 h1.tituloProjetos{
     color: white;
@@ -124,8 +125,8 @@ h1.tituloProjetos{
 
 .swiper {
     width: 30vw;
-    height: 40vw;
-    margin-top: 8em;
+    height: 35vw;
+    margin-top: 5em;
     margin-bottom: 5em;
     box-shadow:
   4.5px 2.5px 62.6px rgba(0, 0, 0, 0.03),
