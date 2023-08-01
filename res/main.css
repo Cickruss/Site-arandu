@@ -80,7 +80,7 @@ div.cardsQuemSomos{
 @media (max-width: 750px){
     div.cardsQuemSomos{
         display: grid;
-        grid-column-gap: 100px;
+        grid-column-gap: 40px;
         grid-row-gap: 40px;
         grid-template-columns: repeat(2, 1fr);
     }
