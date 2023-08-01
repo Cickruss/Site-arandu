@@ -92,10 +92,6 @@ div.cardsQuemSomos{
         grid-row-gap: 40px;
         grid-template-columns: repeat(2, 1fr);
     }
-    div.cards{
-        width: 80%;
-        height: 80%;
-    }
     div.imagemCards{
         width: 100px;
         height: 100px
