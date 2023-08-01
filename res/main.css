@@ -79,7 +79,11 @@ div.cardsQuemSomos{
 
 @media (max-width: 750px){
     section.paginaLogo{
-        height: 600px;
+        height: 700px;
+    }
+    div.logoPrincipal{
+        background-attachment: scroll;
+        height: 500px;
     }
     div.cardsQuemSomos{
         display: grid;
@@ -93,10 +97,6 @@ div.cardsQuemSomos{
     }
     div.descricaoSobreNos{
         width: 300px;
-    }
-    div.logoPrincipal{
-        background-attachment: scroll;
-        height: 600px;
     }
 }
 
