@@ -80,6 +80,8 @@ div.cardsQuemSomos{
 div.cards{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 div.imagemCards{
@@ -203,4 +205,9 @@ h1.tituloProjetos{
     .swiper-navBtn{
         display: none;
     }
+    .swiper {
+        width: 35vw;
+        height: 45vw;
+        
+      }
 }
