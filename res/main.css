@@ -79,10 +79,6 @@ div.cardsQuemSomos{
 
 @media (max-width: 750px){
     div.cardsQuemSomos{
-        /*display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;*/
         display: grid;
         grid-column-gap: 100px;
         grid-row-gap: 100px;
