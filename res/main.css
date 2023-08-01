@@ -84,6 +84,7 @@ div.cardsQuemSomos{
     div.logoPrincipal{
         background-attachment: scroll;
         height: 500px;
+        padding-top: 50px;
     }
     div.cardsQuemSomos{
         display: grid;
