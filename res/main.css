@@ -27,7 +27,7 @@ section.paginaSobreNos{
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 h1.tituloSobreNos{
     padding-top: 3em;
@@ -81,7 +81,7 @@ div.cardsQuemSomos{
     div.cardsQuemSomos{
         display: grid;
         grid-column-gap: 100px;
-        grid-row-gap: 80px;
+        grid-row-gap: 40px;
         grid-template-columns: repeat(2, 1fr);
     }
     div.imagemCards{
