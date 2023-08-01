@@ -93,6 +93,7 @@ div.cardsQuemSomos{
     }
     div.logoPrincipal{
         background-attachment: scroll;
+        width: 500px;
     }
 }
 
