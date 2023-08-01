@@ -95,7 +95,7 @@ div.cardsQuemSomos{
         width: 300px;
     }
     div.logoPrincipal{
-        background-attachment: scroll;
+        background-attachment: fixed;
         height: 500px;
     }
 }
