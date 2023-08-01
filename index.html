@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" href="../imgs/favicon.png">
     <link rel='stylesheet' type='text/css' media='screen' href='./res/main.css'>
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -87,7 +87,53 @@
                 </div>
             </div>
         </section>
+
+        <section class="paginaProjetos">
+            <h1 class="tituloProjetos">Nossos projetos</h1>
+            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="imgs/bannerFacaBarulho.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/bannerCurumim.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/bannerFechado.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+        <br><br><br><br><br>
     </main>
     <footer></footer>
+    <script src='./src/index.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      loop: true,
+      
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+      </script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -61,7 +62,7 @@ p.descricaoLinguagem{
     padding-top: 1em;
 }
 h1.tituloQuemSomos{
-    padding-top: 2.5em;
+    margin-top: 2.5em;
     font-family: 'Bebas Neue', sans-serif;
     color: white;
     font-size: 3em;
@@ -76,31 +77,6 @@ div.cardsQuemSomos{
     gap: 5vw;
     transition: 1s;
 }
-
-@media (max-width: 750px){
-    section.paginaLogo{
-        height: 700px;
-    }
-    div.logoPrincipal{
-        background-attachment: scroll;
-        height: 500px;
-        padding-top: 100px;
-    }
-    div.cardsQuemSomos{
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    div.imagemCards{
-        width: 100px;
-        height: 100px
-    }
-    div.descricaoSobreNos{
-        width: 300px;
-    }
-}
-
 div.cards{
     display: flex;
     flex-direction: column;
@@ -125,4 +101,95 @@ p.cargoCards{
     color: white;
     font-size: 0.8em;
     text-align: center;
+}
+section.paginaProjetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1.tituloProjetos{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
+    margin-top: 3em;
+    font-size: 2.5em;
+}
+
+.swiper {
+    max-width: 500px;
+    width: 100%;
+    height: 700px;
+  }
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background: #3b3b3b;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 750px){
+    section.paginaLogo{
+        height: 700px;
+    }
+    div.logoPrincipal{
+        background-attachment: scroll;
+        height: 500px;
+        padding-top: 100px;
+    }
+    div.cardsQuemSomos{
+        display: grid;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div.imagemCards{
+        width: 100px;
+        height: 100px
+    }
+    div.descricaoSobreNos{
+        width: 300px;
+    }
 }
