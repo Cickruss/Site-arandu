@@ -73,7 +73,7 @@ div.cardsQuemSomos{
     display: flex;
     flex-direction: row;
     margin-top: 5em;
-    margin-bottom: 6em;
+    margin-bottom: 8em;
     gap: 5vw;
     transition: 1s;
 }
@@ -89,6 +89,10 @@ div.imagemCards{
     background-size: cover;
     background-position: center;
     border-radius: 100%;
+    box-shadow:
+  0.5px 1.3px 22.2px rgba(0, 0, 0, 0.035),
+  4px 10px 177px rgba(0, 0, 0, 0.07)
+;
 }
 p.nomeCards{
     font-family: 'Bebas Neue', sans-serif;
@@ -117,26 +121,30 @@ h1.tituloProjetos{
 }
 
 .swiper {
-    max-width: 500px;
-    width: 100%;
-    height: 700px;
+    width: 20%;
+    height: 500px;
+    margin-top: 8em;
+    margin-bottom: 5em;
+    box-shadow:
+  4.5px 2.5px 62.6px rgba(0, 0, 0, 0.03),
+  36px 20px 500px rgba(0, 0, 0, 0.06)
+;
   }
 
-.swiper-slide {
+  .swiper-slide {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 18px;
-    background: #3b3b3b;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
     background-position: center;
     background-size: cover;
     width: 300px;
     height: 300px;
   }
-
-.swiper-slide img {
+  .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -191,5 +199,8 @@ h1.tituloProjetos{
     }
     div.descricaoSobreNos{
         width: 300px;
+    }
+    .swiper-navBtn{
+        display: none;
     }
 }
