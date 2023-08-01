@@ -78,6 +78,9 @@ div.cardsQuemSomos{
 }
 
 @media (max-width: 750px){
+    section.paginaLogo{
+        height: 900px;
+    }
     div.cardsQuemSomos{
         display: grid;
         grid-column-gap: 40px;
