@@ -319,6 +319,6 @@ main{
     width: 10px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #232323;
+    background-color: #353535;
     border-radius: 20px;
 }
