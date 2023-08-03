@@ -345,6 +345,23 @@ img.logoAranduFooter{
     a.link{
     display: none;
     }
+    div.containerPilares{
+        display: grid;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div.pilar.esquerda{
+    flex-direction: column;
+    text-align: left;
+    }
+    div.pilar{
+    flex-direction: column-reverse;
+    text-align: justify;
+    }
+    div.retaPilar{
+        display: none;
+    }
 }
 
 main{
