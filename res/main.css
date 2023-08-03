@@ -31,7 +31,7 @@ section.paginaSobreNos{
     width: 100%;
 }
 h1.tituloSobreNos{
-    margin-top: 3em;
+    margin-top: 2em;
     font-family: 'Bebas Neue', sans-serif;
     color: white;
     font-size: 2.5em;
@@ -39,7 +39,7 @@ h1.tituloSobreNos{
 }
 div.descricaoSobreNos{
     width: 500px;
-    margin-top: 3em;
+    margin-top: 1.5em;
 }
 p.descricaoSobreNos{
     font-family: 'Poppins', sans-serif;
@@ -47,20 +47,65 @@ p.descricaoSobreNos{
     font-weight: 500;
     text-align: center;
 }
-h2.tituloLinguagem{
-    color: white;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5em;
-    letter-spacing: 3px;
-    margin-top: 1.5em;
+div.containerPilares{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
 }
-p.descricaoLinguagem{
+div.pilar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+div.pilar.esquerda{
+    margin-right: 14vw;
+}
+h1.textoPilar{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+h1.textoPilar.vermelho{
+    color: #DF4041;
+}
+h1.textoPilar.amarelo{
+    color: #FACF32;
+}
+h1.textoPilar.azul{
+    color: #346BC8;
+}
+h1.textoPilar.verde{
+    color: #369448;
+}
+div.retaPilar{
+    width: 3px;
+    height: 80px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+div.descricaoPilar{
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-size: 0.8em;
-    font-weight: 200;
-    margin-top: 1em;
+    
 }
+div.descricaoPilar.topicos{
+    display: flex;
+    flex-direction: column;
+}
+div.descricaoPilar.texto{
+    width: 28vw;
+}
+
+
+
+
+
 h1.tituloQuemSomos{
     margin-top: 2.5em;
     font-family: 'Bebas Neue', sans-serif;
@@ -211,6 +256,7 @@ img.logoAranduFooter{
     justify-content: center;
     align-items: center;
 }
+
 
 
 
