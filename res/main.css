@@ -175,6 +175,7 @@ section.paginaProjetos{
     background-color: #232323;
 }
 h1.tituloProjetos{
+    text-align: center;
     color: white;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 3px;
@@ -183,8 +184,8 @@ h1.tituloProjetos{
 }
 
 .swiper {
-    width: 30vw;
-    height: 35vw;
+    width: 25vw;
+    height: 30vw;
     margin-top: 5em;
     margin-bottom: 5em;
     box-shadow:
