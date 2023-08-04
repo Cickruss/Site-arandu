@@ -117,13 +117,12 @@ h1.tituloQuemSomos{
     color: white;
     font-size: 3em;
     letter-spacing: 3px;
+    margin-bottom: 1.5em;
 }
 
 div.cardsQuemSomos{
     display: flex;
     flex-direction: row;
-    margin-top: 5em;
-    margin-bottom: 8em;
     gap: 5vw;
 }
 div.cards{
