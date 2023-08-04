@@ -350,22 +350,10 @@ section.footer{
         margin-right: 30px;
         
     }
-    div.redeSocial{gap: 0};
-    div.logoRede{
-        width: 50px;
-        height: 50px;
-        box-shadow:
-      4.5px 2.5px 62.6px rgba(0, 0, 0, 0.03),
-      36px 20px 500px rgba(0, 0, 0, 0.06)
-    }
-    section.footer{
-        height: 300px;
+    div.rede{
+        gap: 1vh;
     }
     
-    a.link{
-    display: none;
-    }
-
 
     div.containerPilares{
         display: none;
