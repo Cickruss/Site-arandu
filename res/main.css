@@ -367,6 +367,9 @@ section.footer{
     div.rede{
         margin-bottom: 2vh;
     }
+    h1.tituloContatos{
+        font-size: 1.5em;
+    }
     
 }
 
