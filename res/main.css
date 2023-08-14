@@ -9,6 +9,9 @@
 body{
     background-color: #161616;
 }
+strong.strong{
+    font-weight: 900;
+}
 
 div.logoMinimalista{
     display: none; /* flex */
@@ -16,7 +19,7 @@ div.logoMinimalista{
     margin-top: 15px;
 }
 div.logoPrincipal{
-    height: 900px;
+    height: 100vh;
     background-image: url(../imgs/logoPrincipal.png);
     background-size: cover;
     background-position: center;
@@ -25,105 +28,110 @@ div.logoPrincipal{
 section.paginaSobreNos{
     background-color: #232323;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+div.containerPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20em;
     width: 100%;
     height: 100vh;
 }
+div.containerEsquerdo{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+div.containerDireito{
+    display: flex;
+    flex-direction: column;
+}
+div.svgArandu{
+    width: 25vw;
+}
+div.containerSignificado{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: 20vh;
+}
+span.significadoTitulo{
+    font-size: 2em;
+}
+span.sabioTitulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
 h1.tituloSobreNos{
-    margin-top: 2em;
     font-family: 'Bebas Neue', sans-serif;
     color: white;
     font-size: 2.5em;
     letter-spacing: 3px;
+    
+}
+h1.tituloArandu{
+    margin-top: -15vh;
 }
 div.descricaoSobreNos{
-    width: 500px;
-    margin-top: 1.5em;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
 }
-p.descricaoSobreNos{
+
+p.descricaoArandu{
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: 500;
-    text-align: center;
+    text-align: justify;
 }
-div.containerPilares{
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5vh;
+
+h1.tupiTitulo{
+    font-size: 1.5em;
 }
-div.pilar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4vw;
+p.tupiDescricao{
+    font-size: 0.8em;
 }
-div.pilar.esquerda{
-    margin-right: 14vw;
-}
-h1.textoPilar{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2em;
-    letter-spacing: 3px;
-}
-h1.textoPilar.vermelho{
-    color: #DF4041;
-}
-h1.textoPilar.amarelo{
-    color: #FACF32;
-}
-h1.textoPilar.azul{
-    color: #346BC8;
-}
-h1.textoPilar.verde{
-    color: #369448;
-}
-div.retaPilar{
-    width: 3px;
-    height: 80px;
+div.retaSobreNos{
+    width: 1px;
+    height: 30vh;
     background-color: white;
-    border-radius: 5px;
-    
 }
-div.descricaoPilar{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    
-}
-div.descricaoPilar.topicos{
-    display: flex;
-    flex-direction: column;
-}
-div.descricaoPilar.texto{
-    width: 28vw;
-}
+
+
+
 
 
 section.quemSomos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    background-color: #232323;
 }
 
 
 h1.tituloQuemSomos{
     font-family: 'Bebas Neue', sans-serif;
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
     letter-spacing: 3px;
-    margin-bottom: 1.5em;
+    margin-top: 15vh;
 }
 
 div.cardsQuemSomos{
+    margin-top: 20vh;
     display: flex;
     flex-direction: row;
-    gap: 5vw;
+    gap: 10vw;
 }
 div.cards{
     display: flex;
@@ -170,24 +178,22 @@ p.cargoCards{
 section.paginaProjetos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: #232323;
 }
 h1.tituloProjetos{
     text-align: center;
     color: white;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 3px;
-    margin-top: 3em;
+    margin-top: 15vh;
     font-size: 2.5em;
 }
 
 .swiper {
     width: 25vw;
     height: 30vw;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
     box-shadow:
   4.5px 2.5px 62.6px rgba(0, 0, 0, 0.03),
   36px 20px 500px rgba(0, 0, 0, 0.06)
@@ -219,7 +225,6 @@ section.footer{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 20%;
     background-image: url(../imgs/rodape.png);
@@ -233,7 +238,7 @@ section.footer{
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 3px;
     font-size: 2.5em;
-    
+    margin-top: 15vh;
   }
 
   div.rede{
@@ -304,28 +309,40 @@ section.footer{
 
 @media (max-width: 750px){
     section.paginaLogo{
-        height: 700px;
+        height: 100vh;
     }
     div.logoPrincipal{
-        background-attachment: scroll;
-        height: 500px;
-        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    h1.tituloSobreNos{
-        margin-top: 30vh;
+    h1.tituloArandu{
+        margin-top: 5vh;
+
+    }
+    div.containerEsquerdo{
+        align-items: center;
+    }
+    div.svgArandu{
+        display: none;
+    }
+    div.descricaoSobreNos{
+        width: 400px;
+    }
+    div.containerSignificado{
+        margin-top: -20vh;
+        align-items: center;
     }
     div.cardsQuemSomos{
         display: grid;
         grid-column-gap: 40px;
         grid-row-gap: 40px;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 10vh;
     }
     div.imagemCards{
         width: 25vw;
         height: 25vw
-    }
-    div.descricaoSobreNos{
-        width: 300px;
     }
     .swiper-navBtn{
         display: none;
@@ -333,7 +350,7 @@ section.footer{
     .swiper {
         width: 60vw;
         height: 70vw;
-        
+        margin-top: 15vh;
       }
     div.cardMidias{
         margin-left: 30px;
@@ -352,54 +369,33 @@ section.footer{
     }
     div.rede{
         gap: 1vh;
-    }
-    
-
-    div.containerPilares{
-        display: none;
-        /*display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: repeat(2, 1fr);*/
-    }
-    div.pilar.esquerda{
-    flex-direction: column;
-    text-align: left;
-    }
-    div.pilar{
-    flex-direction: column-reverse;
-    text-align: justify;
-    }
-    div.retaPilar{
-        display: none;
-    }
-    div.rede{
         margin-bottom: 2vh;
     }
-    h1.tituloContatos{
-        font-size: 1.5em;
+    h1.tituloContatos,h1.tituloQuemSomos,h1.tituloProjetos, h1.tituloArandu{
+        margin-top: 5vh;
     }
     
+    main{
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        width: 100%;
+        height: 100vh;
+    }
+    }
+    
+    
+    .section{
+        scroll-snap-align: start;
+        width: 100%;
+        height: 100vh;
+    
+    }
+    ::-webkit-scrollbar{
+        background-color: transparent;
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: #353535;
+        border-radius: 20px;
 }
 
-main{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    width: 100%;
-    height: 100vh;
-}
-.section{
-    scroll-snap-align: start;
-    width: 100%;
-    height: 100vh;
-
-}
-
-::-webkit-scrollbar{
-    background-color: transparent;
-    width: 10px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #353535;
-    border-radius: 20px;
-}
