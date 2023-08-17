@@ -485,6 +485,9 @@ ul li .animatexto{
     h1.tituloContatos,h1.tituloQuemSomos,h1.tituloProjetos, h1.tituloArandu{
         margin-top: 5vh;
     }
+    h1.tituloProjetos{
+        font-size: 2em;
+    }
     
     main{
         scroll-snap-type: y mandatory;
