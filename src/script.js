@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('.header')
     const container = document.querySelector('.container')
     const inicioPagina = document.querySelector('.paginaLogo')
     const sessoes = document.querySelectorAll('.containers');
@@ -7,11 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const textos = document.querySelectorAll('.textoMenu');
     const classeAnima = 'atual';
     const animatexto = 'animatexto';
+    const animaHeader = 'aparecer'
 
     function animaScroll() {
         const topoPagina = window.pageYOffset + (window.innerHeight / 3);
         if (topoPagina > inicioPagina.offsetTop) {
-            container.classList.remove('escondido');
+            container.classList.remove(animaHeader);
+            header.classList.remove(animaHeader)
             menus.forEach(menu => menu.classList.remove(classeAnima));
             textos.forEach(texto => texto.classList.remove(animatexto));
 
@@ -19,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let i = 0; i < sessoes.length; i++) {
             
             if (topoPagina > sessoes[i].offsetTop) {
-                container.classList.add('escondido');
+                container.classList.add(animaHeader);
+                header.classList.add(animaHeader);
                 menus.forEach(menu => menu.classList.remove(classeAnima));
                 textos.forEach(texto => texto.classList.remove(animatexto));
                 menus[i].classList.add(classeAnima);
