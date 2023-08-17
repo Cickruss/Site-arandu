@@ -47,7 +47,6 @@ div.containerPrincipal{
     flex-wrap: wrap;
     gap: 20em;
     width: 100%;
-    height: 100vh;
 }
 div.containerEsquerdo{
     display: flex;
@@ -446,7 +445,7 @@ ul li .animatexto{
         width: 250px;
     }
     div.containerSignificado{
-        margin-top: -40vh;
+        margin-top: -20vh;
         align-items: center;
     }
     div.cardsQuemSomos{
