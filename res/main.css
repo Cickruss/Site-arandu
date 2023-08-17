@@ -19,7 +19,7 @@ div.logoMinimalista{
     margin-top: 15px;
 }
 div.logoPrincipal{
-    height: 100vh;
+    height: 100%;
     background-image: url(../imgs/logoPrincipal.png);
     background-size: cover;
     background-position: center;
@@ -279,6 +279,114 @@ section.footer{
     gap: 10vw;
   }
 
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 999;
+  }
+
+
+  
+.container{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 1vh;
+    z-index: 99999;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.escondido {
+    transform: translateY(0%);/* Esconde o navbar acima da tela */
+}
+ul{
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+ul li{
+    align-items: center;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    border-radius: 60px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    transition: 0.5s;
+    width: 40px;
+}
+
+ul li:hover{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+    width: 180px;
+    
+}ul li span{
+    position: absolute;
+}
+
+ul li .textoMenu{
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transform: scale(0);
+    transition-delay: 0s;
+    transition: 0.5s;
+}
+ul li:hover .textoMenu{
+    transform: scale(1);
+    transition-delay: 0.25;
+}
+
+.atual{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+    width: 180px;
+    transition: 0.5s;
+}
+ul li .animatexto{
+    transform: scale(1);
+    transition-delay: 0.25;
+}
+
+
+
+
+.btn-topo {
+    display: none;
+    padding: 0 0 5px 0;
+    position: fixed;
+    text-align: center;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    background-color: #303030;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+.btn-topo.show {
+    display: block;
+    opacity: 1;
+}
 
 
 
@@ -316,6 +424,8 @@ section.footer{
         justify-content: center;
         align-items: center;
         background-attachment: scroll;
+        background-position: center;
+        height: 85vh;
     }
     h1.tituloArandu{
         margin-top: 5vh;
@@ -328,10 +438,10 @@ section.footer{
         display: none;
     }
     div.descricaoSobreNos{
-        width: 400px;
+        width: 250px;
     }
     div.containerSignificado{
-        margin-top: -20vh;
+        margin-top: -30vh;
         align-items: center;
     }
     div.cardsQuemSomos{
@@ -382,13 +492,20 @@ section.footer{
         width: 100%;
         height: 100vh;
     }
+    .container{
+        display: none;
+    }
+    .section{
+        height: 110vh;
+    
+    }
     }
     
     
     .section{
         scroll-snap-align: start;
         width: 100%;
-        height: 100vh;
+        height: 120vh;
     
     }
     ::-webkit-scrollbar{

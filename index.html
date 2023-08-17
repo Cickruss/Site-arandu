@@ -11,36 +11,40 @@
 </head>
 <body>
     <header>
-        <div class="logoMinimalista">
-            <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_207_335)">
-                <ellipse cx="15.8481" cy="11.6528" rx="11.8481" ry="11.6528" fill="#DF4041"/>
-                <path d="M41.5185 11.6528C41.5185 17.8045 36.4456 22.8056 30.1704 22.8056C23.8951 22.8056 18.8223 17.8045 18.8223 11.6528C18.8223 5.50108 23.8951 0.5 30.1704 0.5C36.4456 0.5 41.5185 5.50108 41.5185 11.6528Z" fill="#FACF32" stroke="#FACF32"/>
-                <path d="M59.0946 11.6528C59.0946 17.8045 54.0218 22.8056 47.7465 22.8056C41.4713 22.8056 36.3984 17.8045 36.3984 11.6528C36.3984 5.50108 41.4713 0.5 47.7465 0.5C54.0218 0.5 59.0946 5.50108 59.0946 11.6528Z" fill="#346BC8" stroke="#346BC8"/>
-                <ellipse cx="64.087" cy="11.6528" rx="11.9132" ry="11.6528" fill="#369448"/>
-                </g>
-                <defs>
-                <filter id="filter0_d_207_335" x="0" y="0" width="80" height="31.3057" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                <feOffset dy="4"/>
-                <feGaussianBlur stdDeviation="2"/>
-                <feComposite in2="hardAlpha" operator="out"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_207_335"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_207_335" result="shape"/>
-                </filter>
-                </defs>
-                </svg>
+        <div class="container">
+            <ul>
+                <li class="menu" href="#paginaSobreNos" style="--i: #DF4041; --j:#DF4041">
+                    <span class="textoMenu">
+                        Arandu
+                    </span>
+                </li>
+                <li class="menu" href="#paginaProjetos" style="--i: #FACF32; --j:#FACF32">
+                    <span class="textoMenu">
+                        Projetos
+                    </span>
+                </li>
+                <li class="menu" href="#quemSomos"style="--i: #346BC8; --j:#346BC8">
+                    <span class="textoMenu">
+                        Fundadores
+                    </span>
+                </li>
+                <li class="menu" href="#footer" style="--i: #369448; --j:#369448">
+                    <span class="textoMenu">
+                        Contatos
+                    </span>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
-        <section class="paginaLogo section">
+        <button id="btnTopo" class="btn-topo">↑</button>
+
+        <section id="paginaLogo" class="paginaLogo section ">
                 <div class="logoPrincipal">
                 </div>
         </section>
 
-        <section class="paginaSobreNos section">
+        <section id="paginaSobreNos" class="paginaSobreNos section containers">
             
             <div class="containerPrincipal">
                 <div class="containerEsquerdo">
@@ -75,7 +79,7 @@
                 
         </section>
 
-        <section class="paginaProjetos section">
+        <section id="paginaProjetos" class="paginaProjetos section containers">
             <h1 class="tituloProjetos">Softwares e Projetos</h1>
             
             <div class="swiper mySwiper">
@@ -95,8 +99,8 @@
             </div>
         </section>
 
-        <section class="quemSomos section">
-                <h1 class="tituloQuemSomos">QUEM SOMOS</h1>
+        <section id="quemSomos" class="quemSomos section containers">
+                <h1 class="tituloQuemSomos">FUNDADORES</h1>
 
                 <div class="cardsQuemSomos">
                     <div class="cards">
@@ -134,8 +138,8 @@
                     </div>
         </section>
 
-        <section class="footer section">
-           <h1 class="tituloContatos">NOSSOS CONTATOS</h1>
+        <section id="footer" class="footer section containers">
+           <h1 class="tituloContatos">CONTATOS</h1>
            <div class="redesSociais">
             <div class="rede">
                 
@@ -284,5 +288,7 @@
       },
     });
       </script>
+
+      <script src="src/script.js"></script>
 </body>
 </html>
