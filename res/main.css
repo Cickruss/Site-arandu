@@ -441,7 +441,7 @@ ul li .animatexto{
         width: 250px;
     }
     div.containerSignificado{
-        margin-top: -30vh;
+        margin-top: -40vh;
         align-items: center;
     }
     div.cardsQuemSomos{
@@ -449,7 +449,7 @@ ul li .animatexto{
         grid-column-gap: 40px;
         grid-row-gap: 40px;
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 10vh;
+        margin-top: 20vh;
     }
     div.imagemCards{
         width: 25vw;
@@ -498,6 +498,9 @@ ul li .animatexto{
     .section{
         height: 110vh;
     
+    }
+    p.segundaDescrição{
+        display: none;
     }
     }
     
