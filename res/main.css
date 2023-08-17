@@ -500,7 +500,7 @@ ul li .animatexto{
         display: none;
     }
     .section{
-        height: 100%;
+        height: 100vh;
     
     }
     p.segundaDescrição{
