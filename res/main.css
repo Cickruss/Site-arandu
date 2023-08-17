@@ -52,6 +52,7 @@ div.containerEsquerdo{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    
 }
 div.containerDireito{
     display: flex;
@@ -439,9 +440,17 @@ ul li .animatexto{
     }
     div.containerEsquerdo{
         align-items: center;
+        gap: 10vh;
+    }
+    div.containerDireito{
+        height: 50%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     div.svgArandu{
-        display: none;
+        width: 70vw;
+        margin-bottom: 10vh;
     }
     div.descricaoSobreNos{
         width: 250px;
@@ -449,6 +458,7 @@ ul li .animatexto{
     div.containerSignificado{
         margin-top: -20vh;
         align-items: center;
+
     }
     div.cardsQuemSomos{
         display: grid;
@@ -514,6 +524,9 @@ ul li .animatexto{
         grid-row-gap: 80px;
         grid-template-columns: repeat(2, 1fr);
         margin-top: -20vh;
+    }
+    div.containerPrincipal{
+        height: 80vh;
     }
     }
     
