@@ -9,10 +9,14 @@
 body{
     background-color: #161616;
 }
+div.containerProjetos a.linksNoTexto{
+    color: #FACF32;
+    text-decoration: none;
+}
 strong.strong{
     font-weight: 900;
 }
-h1.tituloQuemSomos,h1.tituloProjetos{
+h1.tituloQuemSomos{
     margin-top: 20vh;
 }
 h1.tituloContatos{
@@ -39,14 +43,15 @@ section.paginaSobreNos{
     justify-content: center;
     align-items: center;
 }
-div.containerPrincipal{
+div.containerSobreNos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 80vw;
-    height: 50vh;
+    width: 70vw;
+    height: 75vh;
+    gap: 5vw;
 }
 div.containerEsquerdo{
     display: flex;
@@ -59,10 +64,9 @@ div.containerDireito{
     flex-direction: column;
     justify-content: space-around;
     padding: 0;
-    height: 100%;
 }
 div.svgArandu{
-    width: 25vw;
+    width: 300px;
 }
 div.containerSignificado{
     display: flex;
@@ -86,9 +90,6 @@ h1.tituloSobreNos{
     font-size: 2.5em;
     letter-spacing: 3px;
     
-}
-h1.tituloArandu{
-    margin-top: -15vh;
 }
 div.descricaoSobreNos{
     width: 700px;
@@ -187,6 +188,50 @@ section.paginaProjetos{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+h1.tituloProjetosEsquerdo{
+    margin-top: 5vh;
+    display: none;
+}
+
+@media (max-width: 1400px){
+    div.projetosDireito{
+        display: none !important;
+    }
+    div.containerProjetos, div.projetosEsquerdo{
+        flex-direction: column;
+    }
+
+    h1.tituloProjetosEsquerdo{
+        display: flex;
+    }
+
+}
+
+div.containerProjetos{
+    width: 70vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+div.projetosEsquerdo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+div.projetosDireito{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    gap: 5vh;
+
 }
 h1.tituloProjetos{
     text-align: center;
@@ -195,10 +240,39 @@ h1.tituloProjetos{
     letter-spacing: 3px;
     font-size: 2.5em;
 }
+p.textoProjetos{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+    text-align: justify;
+    width: 80%;
+}
+div.containerMedalhas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
+}
+div.cardMedalha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    width: 50%;
+}
+p.nomeMedalha{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.svgMedalha{
+    height: 100px;
+}
 .swiper {
-    width: 20vw;
-    height: 25vw;
+    width: 400px;
+    height: 500px;
     margin-top: 10vh;
     margin-bottom: 5vh;
     box-shadow:
@@ -529,8 +603,9 @@ ul li .animatexto{
         grid-template-columns: repeat(2, 1fr);
         margin-top: -20vh;
     }
-    div.containerPrincipal{
+    div.containerSobreNos{
         height: 80vh;
+        width: 70vw;
     }
     }
     
@@ -538,7 +613,7 @@ ul li .animatexto{
     .section{
         scroll-snap-align: start;
         width: 100%;
-        height: 120vh;
+        height: 100vh;
     
     }
     ::-webkit-scrollbar{

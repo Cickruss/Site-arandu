@@ -20,7 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         }
         for (let i = 0; i < sessoes.length; i++) {
-            
+            if (i == 0) {
+                if(topoPagina > 350){
+                    container.classList.add(animaHeader);
+                    header.classList.add(animaHeader);
+                    menus.forEach(menu => menu.classList.remove(classeAnima));
+                    textos.forEach(texto => texto.classList.remove(animatexto));
+                    menus[i].classList.add(classeAnima);
+                    textos[i].classList.add(animatexto);
+                }
+            }
             if (topoPagina > sessoes[i].offsetTop) {
                 container.classList.add(animaHeader);
                 header.classList.add(animaHeader);
