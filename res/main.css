@@ -65,8 +65,17 @@ div.containerDireito{
     justify-content: space-around;
     padding: 0;
 }
-div.svgArandu{
+.svgArandu{
     width: 300px;
+    height: 200px;
+}
+div.containerSvg{
+    height: 200px;
+    transition: transform .5s;
+}
+.bolaVermelha:hover,.bolaAmarela:hover, .bolaAzul:hover, .bolaVerde:hover{
+    transform: translateY(-10px);
+    transition: transform .8s;
 }
 div.containerSignificado{
     display: flex;
@@ -262,6 +271,10 @@ div.cardMedalha{
     align-items: center;
     gap: 2vh;
     width: 50%;
+    transition: transform .8s;
+}
+div.cardMedalha:hover{
+    transform: scale(1.2);
 }
 p.nomeMedalha{
     color: white;
@@ -269,6 +282,7 @@ p.nomeMedalha{
 }
 .svgMedalha{
     height: 100px;
+    transition: transform .5s;
 }
 .swiper {
     width: 400px;
