@@ -210,6 +210,7 @@ h1.tituloProjetosEsquerdo{
     }
     div.containerProjetos, div.projetosEsquerdo{
         flex-direction: column;
+        width: 100%;
     }
 
     h1.tituloProjetosEsquerdo{
@@ -230,14 +231,13 @@ div.projetosEsquerdo{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
 }
 div.projetosDireito{
     display: flex;
     align-items:center;
     justify-content: space-between;
     flex-direction: column;
-    width: 50%;
+    width: 600px;
     height: 80%;
     gap: 4vh;
 
@@ -637,8 +637,8 @@ div.logoPrincipal div.setaPrimeiraPagina{
         gap: 1vh;
         margin-bottom: 2vh;
     }
-    h1.tituloContatos,h1.tituloQuemSomos,h1.tituloProjetos, h1.tituloArandu{
-        margin-top: 5vh;
+    h1.tituloContatos,h1.tituloQuemSomos, h1.tituloArandu{
+        margin-top: 10vh;
         font-size: 2em;
     }
     h1.tituloContatos{
