@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', function() {
+    window.scrollTo(0, 0);
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.header')
