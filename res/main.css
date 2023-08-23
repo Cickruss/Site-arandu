@@ -205,17 +205,18 @@ h1.tituloProjetosEsquerdo{
 }
 
 @media (max-width: 1400px){
-    div.projetosDireito{
-        display: none !important;
-    }
-    div.containerProjetos, div.projetosEsquerdo{
-        flex-direction: column;
-        width: 100%;
-    }
+            div.projetosDireito{
+                display: none !important;
+            }
+            div.containerProjetos, div.projetosEsquerdo{
+                flex-direction: column;
+                width: 100%;
+            }
 
-    h1.tituloProjetosEsquerdo{
-        display: flex;
-    }
+            h1.tituloProjetosEsquerdo{
+                display: flex
+                
+            }
 
 }
 
@@ -559,118 +560,122 @@ div.logoPrincipal div.setaPrimeiraPagina{
 
 
 @media (max-width: 750px){
-    section.paginaLogo{
-        height: 100vh;
-    }
-    div.logoPrincipal{
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        background-attachment: scroll;
-        background-position: center;
-        height: 85vh;
-    }
-    div.logoPrincipal div.setaPrimeiraPagina {
-        margin-bottom: -60px;
-    }
-    h1.tituloArandu{
-        margin-top: 5vh;
+                section.paginaLogo{
+                    height: 100vh;
+                }
+                div.logoPrincipal{
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    background-attachment: scroll;
+                    background-position: center;
+                    height: 85vh;
+                }
+                div.logoPrincipal div.setaPrimeiraPagina {
+                    margin-bottom: -60px;
+                }
+                h1.tituloArandu{
+                    margin-top: 20vh;
+                    font-size: 2em;
 
-    }
-    div.containerEsquerdo{
-        align-items: center;
-        gap: 10vh;
-    }
-    div.containerDireito{
-        height: 50%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    div.svgArandu{
-        width: 70vw;
-        margin-bottom: 10vh;
-    }
-    div.descricaoSobreNos{
-        width: 250px;
-    }
-    div.containerSignificado{
-        margin-top: -20vh;
-        align-items: center;
+                }
+                div.containerEsquerdo{
+                    align-items: center;
+                    gap: 10vh;
+                }
+                div.containerDireito{
+                    height: 50%;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
+                div.svgArandu{
+                    width: 70vw;
+                    margin-bottom: 10vh;
+                }
+                div.descricaoSobreNos{
+                    width: 250px;
+                }
+                div.containerSignificado{
+                    margin-top: -20vh;
+                    align-items: center;
 
-    }
-    div.cardsQuemSomos{
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 20vh;
-    }
-    div.imagemCards{
-        width: 25vw;
-        height: 25vw
-    }
-    .swiper-navBtn{
-        display: none;
-    }
-    .swiper {
-        width: 60vw;
-        height: 70vw;
-        margin-top: 15vh;
-      }
-    div.cardMidias{
-        margin-left: 30px;
-        width: 40vw;
-        height: 40vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    img.logoAranduFooter{
-        width: 40vw;
-        height: 12vw;
-        margin-right: 30px;
-        
-    }
-    div.rede{
-        gap: 1vh;
-        margin-bottom: 2vh;
-    }
-    h1.tituloContatos,h1.tituloQuemSomos, h1.tituloArandu{
-        margin-top: 10vh;
-        font-size: 2em;
-    }
-    h1.tituloContatos{
-        font-size: 2.5em !important;
-    }
-    
-    main{
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
-        width: 100%;
-        height: 100vh;
-    }
-    header{
-        display: none;
-    }
-    .section{
-        height: 100% !important;
-    }
-    p.segundaDescrição{
-        display: none;
-    }
-    div.redesSociais{
-        display: grid;
-        grid-column-gap: 80px;
-        grid-row-gap: 80px;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: -20vh;
-    }
-    div.containerSobreNos{
-        height: 80vh;
-        width: 70vw;
-    }
+                }
+                div.cardsQuemSomos{
+                    display: grid;
+                    grid-column-gap: 40px;
+                    grid-row-gap: 40px;
+                    grid-template-columns: repeat(2, 1fr);
+                    margin-top: 10vh;
+                }
+                div.imagemCards{
+                    width: 25vw;
+                    height: 25vw
+                }
+                .swiper-navBtn{
+                    display: none;
+                }
+                .swiper {
+                    width: 60vw;
+                    height: 70vw;
+                    margin-top: 15vh;
+                }
+                div.cardMidias{
+                    margin-left: 30px;
+                    width: 40vw;
+                    height: 40vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                img.logoAranduFooter{
+                    width: 40vw;
+                    height: 12vw;
+                    margin-right: 30px;
+                    
+                }
+                div.rede{
+                    gap: 1vh;
+                    margin-bottom: 2vh;
+                }
+                h1.tituloContatos{
+                    font-size: 2.5em !important;
+                }
+                
+                main{
+                    scroll-snap-type: y mandatory;
+                    overflow-y: scroll;
+                    width: 100%;
+                    height: 100vh;
+                }
+                header{
+                    display: none;
+                }
+                .section{
+                    height: 100% !important;
+                }
+                p.segundaDescrição{
+                    display: none;
+                }
+                div.redesSociais{
+                    display: grid;
+                    grid-column-gap: 80px;
+                    grid-row-gap: 80px;
+                    grid-template-columns: repeat(2, 1fr);
+                    margin-top: -20vh;
+                }
+                div.containerSobreNos{
+                    height: 80vh;
+                    width: 70vw;
+                }
+                h1.tituloProjetos{
+                    font-size: 2em;
+                }
+                h1.tituloQuemSomos {
+                    font-size: 2em;
+                    margin-top: 15vh;
+                }
     }
     
     
