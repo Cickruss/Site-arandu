@@ -94,3 +94,15 @@ window.addEventListener('scroll', function() {
     }
 });
 
+const setaBaixo = document.querySelector('#svgSetaPrimeiraTela')
+
+setaBaixo.addEventListener('click', function(){
+    const sessao = document.querySelector('.containers')
+    const segundaPaginaOffsetTop = sessao.offsetTop
+    window.scrollTo({
+        
+        top: segundaPaginaOffsetTop,
+        behavior: 'smooth'
+    });
+
+})

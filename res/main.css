@@ -71,11 +71,11 @@ div.containerDireito{
 }
 div.containerSvg{
     height: 200px;
-    transition: transform .5s;
+    transition: transform .8s ease;
 }
 .bolaVermelha:hover,.bolaAmarela:hover, .bolaAzul:hover, .bolaVerde:hover{
     transform: translateY(-10px);
-    transition: transform .8s;
+    transition: transform .8s ease;
 }
 div.containerSignificado{
     display: flex;
@@ -239,7 +239,7 @@ div.projetosDireito{
     flex-direction: column;
     width: 50%;
     height: 80%;
-    gap: 5vh;
+    gap: 4vh;
 
 }
 h1.tituloProjetos{
@@ -255,6 +255,7 @@ p.textoProjetos{
     font-weight: 500;
     text-align: justify;
     width: 80%;
+;
 }
 div.containerMedalhas{
     display: flex;
@@ -271,10 +272,11 @@ div.cardMedalha{
     align-items: center;
     gap: 2vh;
     width: 50%;
-    transition: transform .8s;
+    transition: transform .8s ease;
 }
 div.cardMedalha:hover{
-    transform: scale(1.2);
+    transform: scale(1.2) ;
+
 }
 p.nomeMedalha{
     color: white;
@@ -282,7 +284,7 @@ p.nomeMedalha{
 }
 .svgMedalha{
     height: 100px;
-    transition: transform .5s;
+    transition: transform .8s;
 }
 .swiper {
     width: 400px;
@@ -317,7 +319,6 @@ p.nomeMedalha{
 
 section.footer{
     width: 100%;
-    height: 100vh !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -483,6 +484,53 @@ ul li .animatexto{
     opacity: 1;
 }
 
+div.setaPrimeiraPagina svg {
+    width: 40px;
+    height: 40px;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+/* div.setaPrimeiraPagina svg path{
+    animation: changeColor 4s infinite;
+} */
+div.logoPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+div.logoPrincipal div.setaPrimeiraPagina{
+    margin-bottom: 40px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes changeColor {
+    0% {
+        fill: #DF4041; /* Cor original da seta */
+    }
+    25%{
+        fill: #FACF32;
+    }
+    50% {
+        fill: #346BC8; /* Cor intermediária (por exemplo, vermelho) */
+    }
+    75%{
+        fill: #369448; /* Cor intermediária (por exemplo, vermelho) */
+
+    }
+    100% {
+        fill: #DF4041; /* Cor original da seta */
+    }
+}
 
 
 
@@ -517,10 +565,13 @@ ul li .animatexto{
     div.logoPrincipal{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         background-attachment: scroll;
         background-position: center;
         height: 85vh;
+    }
+    div.logoPrincipal div.setaPrimeiraPagina {
+        margin-bottom: -60px;
     }
     h1.tituloArandu{
         margin-top: 5vh;
@@ -604,8 +655,7 @@ ul li .animatexto{
         display: none;
     }
     .section{
-        height: 100vh;
-    
+        height: 100% !important;
     }
     p.segundaDescrição{
         display: none;
