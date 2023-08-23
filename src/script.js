@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    window.scrollTo(0, 0);
-});
-
-document.addEventListener('DOMContentLoaded', function() {
+    
     const header = document.querySelector('.header')
     const container = document.querySelector('.container')
     const inicioPagina = document.querySelector('.paginaLogo')
@@ -45,11 +42,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    const paginaLogo = document.getElementById('paginaLogo'); // Substitua pelo ID correto da sua seção de logo
+    let lastScrollY = window.scrollY;
+
+    function applyBlur() {
+        const blurAmount = Math.min(20, Math.max(0, lastScrollY / 50)); // Ajuste o valor conforme desejado
+        paginaLogo.style.filter = `blur(${blurAmount}px)`;
+    }
+
+    function handleScroll() {
+        lastScrollY = window.scrollY;
+        applyBlur();
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
     window.addEventListener('scroll', function () {
         animaScroll();
     });
 
     animaScroll();
+
 });
 
 
