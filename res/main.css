@@ -1,395 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500&family=Poppins:wght@200&display=swap');
 
+
+/* PADRONIZAÇÃO DE CORPO */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background-color: #161616;
 }
-div.containerProjetos a.linksNoTexto{
-    color: #FACF32;
-    text-decoration: none;
+:root {
+    --margem_divisao_paginas: 15vh;
+    --branco: #ffffff;
+    --preto: #000000;
+    --sombra: 4.5px 2.5px 62.6px rgba(0, 0, 0, 0.03),
+    36px 20px 500px rgba(0, 0, 0, 0.06);
+    --vermelho_arandu: #DF4041;
+    /* #D80C0F */
+    --amarelo_arandu: #FACF32;
+    --azul_arandu: #007bff;
+    --verde_arandu: #369448;
+    --tamanho_fonte_extra_grande: 4em;
+    --tamanho_fonte_titulo: 2.5em;
+    --tamanho_fonte_botao: 1.5em;
+    --tamanho_fonte_subtitulo: 1em;
+    --familia_fonte_alternativa: 'Inter', sans-serif;
+    --familia_fonte_titulo: 'Bebas Neue', sans-serif;
+    --familia_fonte_subtitulo: 'Poppins', sans-serif;
+    --cor_fonte_titulo: #ffffff;
+    --cor_fonte_subtitulo: #ffffff;
+    --tamanho_paragrafo_maior: 700px;
+    --tamanho_paragrafo_menor: 500px;
+    --gap_titulo_paragrafo: 2vh;
+    --gap_cards: 5vw;
+    --altura_card_projeto: 400px;
+    --largura_card_projeto: 300px;
+    --tamanho_medalha_projetos: 50px;
+    --background_footer: #1B1B1B;
+    --tamanho_footer: 400px;
+    --tamanho_logo_minimal: 200px
+    /* color: var(--variavel); */
 }
-strong.strong{
-    font-weight: 900;
+section{
+    scroll-snap-align: start;
 }
-h1.tituloQuemSomos{
-    margin-top: 20vh;
+.sessao{
+    width: 80vw;
 }
-h1.tituloContatos{
-    margin-top: 15vh;
-    margin-bottom: 10vh;
-}
-
-div.logoMinimalista{
-    display: none; /* flex */
-    justify-content: center;
-    margin-top: 15px;
-}
-div.logoPrincipal{
-    height: 100%;
-    background-image: url(../imgs/logoPrincipal.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-section.paginaSobreNos{
-    background-color: #232323;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-div.containerSobreNos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 70vw;
-    height: 75vh;
-    gap: 5vw;
-}
-div.containerEsquerdo{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    
-}
-div.containerDireito{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0;
-}
-.svgArandu{
-    width: 300px;
-    height: 200px;
-}
-div.containerSvg{
-    height: 200px;
-    transition: transform .8s ease;
-}
-.bolaVermelha:hover,.bolaAmarela:hover, .bolaAzul:hover, .bolaVerde:hover{
-    transform: translateY(-10px);
-    transition: transform .8s ease;
-}
-div.containerSignificado{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    font-family: 'Bebas Neue', sans-serif;
-    color: white;
-    letter-spacing: 3px;
-}
-span.significadoTitulo{
-    font-size: 2em;
-}
-span.sabioTitulo{
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.8em;
-    letter-spacing: 1px;
-}
-h1.tituloSobreNos{
-    font-family: 'Bebas Neue', sans-serif;
-    color: white;
-    font-size: 2.5em;
-    letter-spacing: 3px;
-    
-}
-div.descricaoSobreNos{
-    width: 700px;
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-}
-
-p.descricaoArandu{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-weight: 500;
-    text-align: justify;
-}
-
-h1.tupiTitulo{
-    font-size: 1.5em;
-}
-p.tupiDescricao{
-    font-size: 0.8em;
-}
-div.retaSobreNos{
-    width: 1px;
-    height: 30vh;
-    background-color: white;
-}
+/* ---------------------- */
 
 
 
+/* NAV BAR */
 
-
-section.quemSomos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #232323;
-}
-
-
-h1.tituloQuemSomos{
-    font-family: 'Bebas Neue', sans-serif;
-    color: white;
-    font-size: 2.5em;
-    letter-spacing: 3px;
-}
-
-div.cardsQuemSomos{
-    margin-top: 20vh;
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
-}
-div.cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-div.imagemCards{
-    width: 150px;
-    height: 150px;
-    background-image: url(../imgs/Personagem.png);
-    background-size: cover;
-    background-position: center;
-    border-radius: 100%;
-    box-shadow:
-  0.5px 1.3px 22.2px rgba(0, 0, 0, 0.035),
-  4px 10px 177px rgba(0, 0, 0, 0.07);
-}
-div.imagemCards.bordaVermelha{
-    border: 1px solid #DF4041;
-}
-div.imagemCards.bordaAmarela{
-    border: 1px solid #FACF32;
-}
-div.imagemCards.bordaAzul{
-    border: 1px solid #346BC8;
-}
-div.imagemCards.bordaVerde{
-    border: 1px solid #369448;
-}
-p.nomeCards{
-    font-family: 'Bebas Neue', sans-serif;
-    color: white;
-    text-align: center;
-    letter-spacing: 2px;
-}
-p.cargoCards{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-size: 0.8em;
-    text-align: center;
-}
-section.paginaProjetos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-h1.tituloProjetosEsquerdo{
-    margin-top: 5vh;
-    display: none;
-}
-
-@media (max-width: 1400px){
-            div.projetosDireito{
-                display: none !important;
-            }
-            div.containerProjetos, div.projetosEsquerdo{
-                flex-direction: column;
-                width: 100%;
-            }
-
-            h1.tituloProjetosEsquerdo{
-                display: flex
-                
-            }
-
-}
-
-div.containerProjetos{
-    width: 70vw;
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5vw;
-}
-div.projetosEsquerdo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-div.projetosDireito{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 600px;
-    height: 80%;
-    gap: 4vh;
-
-}
-h1.tituloProjetos{
-    text-align: center;
-    color: white;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 3px;
-    font-size: 2.5em;
-}
-p.textoProjetos{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-weight: 500;
-    text-align: justify;
-    width: 80%;
-;
-}
-div.containerMedalhas{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-}
-div.cardMedalha{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
-    width: 50%;
-    transition: transform .8s ease;
-}
-div.cardMedalha:hover{
-    transform: scale(1.2) ;
-
-}
-p.nomeMedalha{
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
-.svgMedalha{
-    height: 100px;
-    transition: transform .8s;
-}
-.swiper {
-    width: 400px;
-    height: 500px;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-    box-shadow:
-  4.5px 2.5px 62.6px rgba(0, 0, 0, 0.03),
-  36px 20px 500px rgba(0, 0, 0, 0.06)
-;
-  }
-
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-  }
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-section.footer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20%;
-    background-image: url(../imgs/rodape.png);
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    background-position: bottom;
-
-  }
-  h1.tituloContatos{
-    color: white;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 3px;
-    font-size: 2.5em;
-  }
-
-  div.rede{
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3vh;
-  }
-  svg.vetorRede{
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    opacity: 1;
-    box-shadow:
-  4.5px 2.5px 62.6px rgba(0, 0, 0, 0.03),
-  36px 20px 500px rgba(0, 0, 0, 0.06)
-;
-  }
-  p.nomeRede{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    opacity: .5;
-  }
-  div.rede > a{
-    text-decoration: none;
-  }
-  svg.vetorRede:hover{
-    border: .3px solid rgb(114, 114, 114);
-    border-radius: 100%;
-  }
-  div.redesSociais{
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
-  }
-
-  header, .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #3131315d;
-    z-index: 999;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-
-
-  
 .container{
-    font-family: 'Poppins', sans-serif;
+    font-family:var (--familia_fonte_subtitulo);
     font-weight: bold;
     align-items: center;
     display: flex;
@@ -401,38 +67,6 @@ section.footer{
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
 }
-
-.aparecer {
-    transform: translateY(0%);/* Esconde o navbar acima da tela */
-}
-ul{
-    display: flex;
-    gap: 50px;
-    position: relative;
-}
-ul li{
-    align-items: center;
-    background: linear-gradient(45deg, var(--i), var(--j));
-    border-radius: 60px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    list-style: none;
-    position: relative;
-    transition: 0.5s;
-    width: 40px;
-}
-
-ul li:hover{
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
-    width: 180px;
-    
-}ul li span{
-    position: absolute;
-}
-
 ul li .textoMenu{
     color: #fff;
     font-size: 1rem;
@@ -446,20 +80,301 @@ ul li:hover .textoMenu{
     transform: scale(1);
     transition-delay: 0.25;
 }
+/* -------------- */
 
-.atual{
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
-    width: 180px;
-    transition: 0.5s;
+
+
+
+/* PRIMEIRA PAGINA */
+div.logoPrincipal{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(../imgs/foto_principal.png);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
-ul li .animatexto{
-    transform: scale(1);
-    transition-delay: 0.25;
+div.conteudo-primeira_pagina{
+    margin-top: 600px;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+div.conteudo-primeira_pagina h1{
+    font-family: var(--familia_fonte_alternativa);
+    font-size: var(--tamanho_fonte_extra_grande);
+    color: var(--cor_fonte_titulo);
+    text-align: end;
+}
+div.botao_saiba_mais-primeira_pagina{
+    width: 250px;
+    height: 60px;
+    background-color: var(--branco);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    box-shadow: var(--sombra);
+    transition: background-color 1s ease
+}
+div.botao_saiba_mais-primeira_pagina img{
+    width: 30px;
+    height: 30px;
+}
+div.botao_saiba_mais-primeira_pagina p{
+    font-family: var(--familia_fonte_alternativa);
+    font-size: var(--tamanho_fonte_botao);
+    color: var(--preto);
+    font-weight: bolder;
+}
+/* --------------------------- */
+
+
+
+
+
+
+/* SEGUNDA PAGINA */
+section.segunda_pagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.container-segunda_pagina{
+    margin-top: var(--margem_divisao_paginas);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+div.containerEsquerdo{
+    display: flex;
+    flex-direction: column;
+}
+div.containerSignificado{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+div.containerSignificado h1{
+    font-family: var(--familia_fonte_titulo);
+    font-size: var(--tamanho_fonte_titulo);
+    color: var(--cor_fonte_titulo);
+}
+div.containerSignificado span{
+    font-family: var(--familia_fonte_subtitulo);
+    font-size: var(--tamanho_fonte_subtitulo);
+    color: var(--cor_fonte_subtitulo);
+}
+div.containerDireito{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+}
+div.descricaoSobreNos{
+    width: var(--tamanho_paragrafo_maior);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap_titulo_paragrafo);
+    margin-top: 50px;
+}
+div.descricaoSobreNos p{
+    font-family: var(--familia_fonte_subtitulo);
+    font-size: var(--tamanho_fonte_subtitulo);
+    color: var(--cor_fonte_subtitulo);
+    text-align: justify;
+}
+div.containerSvg{
+    transition: transform .8s ease;
+}
+div.containerSvg svg{
+    width: 500px;
+    height: 400px;
+}
+
+/* --------------------------- */
+
+
+
+/* TERCEIRA PÁGINA */
+section.terceira_pagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.container-terceira_pagina{
+    margin-top: var(--margem_divisao_paginas);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+div.container-terceira_pagina div.projetosEsquerdo{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: var(--gap_cards);
+}
+div.container-card div.card_projeto{
+    width: var(--largura_card_projeto);
+    height: var(--altura_card_projeto);
+    border-radius: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    cursor: pointer;
+}
+div.container-card svg{
+    width: var(--tamanho_medalha_projetos);
+    position: relative;
+    left: 25px;
+    bottom: 25px;
+    cursor: pointer;
+    transition: transform .8s ease;
+}
+div.projetosEsquerdo #card-curumin{
+    background-image: url('../imgs/bannerCurumim.png');
+    background-size: cover;
+    background-position: center;
+}
+div.projetosEsquerdo #card-faca_barulho{
+    background-image: url('../imgs/bannerFacaBarulho.png');
+    background-size: cover;
+    background-position: center;
+}
+div.container-terceira_pagina div.projetosDireito{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: var(--gap_titulo_paragrafo);
+}
+div.projetosDireito h1{
+    font-family: var(--familia_fonte_titulo);
+    font-size: var(--tamanho_fonte_titulo);
+    color: var(--cor_fonte_titulo);
+}
+div.projetosDireito p{
+    font-family: var(--familia_fonte_subtitulo);
+    font-size: var(--tamanho_fonte_subtitulo);
+    color: var(--cor_fonte_subtitulo);
+    width: var(--tamanho_paragrafo_menor);
+    text-align: justify;
+}
+div.projetosDireito p a{
+    color: var(--branco);
+    text-decoration: underline;
+    
+}
+/* ------------------------- */
+
+
+
+
+/* FOOTER */
+footer{
+    margin-top: var(--margem_divisao_paginas);
+    width: 100%;
+    background-color: var(--background_footer);
+    height: var(--tamanho_footer);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 250px;
+}
+div.menu-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+div.menu-footer svg{
+    width: var(--tamanho_logo_minimal);
+}
+div.menu-paginas{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+div.menu-paginas p{
+    font-family: var(--familia_fonte_subtitulo);
+    font-size: var(--tamanho_fonte_subtitulo);
+    color: var(--cor_fonte_subtitulo);
+    cursor: pointer;
+}
+div.menu-redes{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+div.menu-redes svg{
+    width: 40px;
+    transition: fill .8s;
+    fill: #161616;
+    cursor: pointer;
+}
+div.container-footer div.reta-footer{
+    width: 50%;
+    height: .8px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+div.container-footer > p{
+    font-family: var(--familia_fonte_subtitulo);
+    font-size: var(--tamanho_fonte_subtitulo);
+    color: #333333;
+}
+svg.svg-youtube:hover{
+    fill: var(--vermelho_arandu);
+}
+svg.svg-instagram:hover{
+    fill: var(--amarelo_arandu);
+}
+svg.svg-linkedin:hover{
+    fill: var(--azul_arandu);
+}
+svg.svg-email:hover{
+    fill: var(--verde_arandu);
 }
 
 
 
+/* ------------------------- */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BOTAO SETA PARA O TOPO */
 .btn-topo {
     display: none;
     padding: 0 0 5px 0;
@@ -485,25 +400,25 @@ ul li .animatexto{
     opacity: 1;
 }
 
-div.setaPrimeiraPagina svg {
-    width: 40px;
-    height: 40px;
-    animation: pulse 2s infinite;
-    cursor: pointer;
-}
-/* div.setaPrimeiraPagina svg path{
-    animation: changeColor 4s infinite;
-} */
-div.logoPrincipal{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-div.logoPrincipal div.setaPrimeiraPagina{
-    margin-bottom: 40px;
-}
+/* ------------ */
 
-@keyframes pulse {
+
+
+/* STILO SCROLL BAR */
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #353535;
+    border-radius: 20px;
+}
+/* ---------- */
+
+
+
+/* ANIMAÇÕES */
+/* @keyframes pulse {
     0% {
         transform: translateY(0);
     }
@@ -513,7 +428,7 @@ div.logoPrincipal div.setaPrimeiraPagina{
     100% {
         transform: translateY(0);
     }
-}
+} */
 @keyframes changeColor {
     0% {
         fill: #DF4041; /* Cor original da seta */
@@ -532,165 +447,12 @@ div.logoPrincipal div.setaPrimeiraPagina{
         fill: #DF4041; /* Cor original da seta */
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 750px){
-                section.paginaLogo{
-                    height: 100vh;
-                }
-                div.logoPrincipal{
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-end;
-                    background-attachment: scroll;
-                    background-position: center;
-                    height: 85vh;
-                }
-                div.logoPrincipal div.setaPrimeiraPagina {
-                    margin-bottom: -60px;
-                }
-                h1.tituloArandu{
-                    margin-top: 20vh;
-                    font-size: 1.8em;
-
-                }
-                div.containerEsquerdo{
-                    align-items: center;
-                    gap: 10vh;
-                }
-                div.containerDireito{
-                    height: 50%;
-                    width: 100%;
-                    justify-content: center;
-                    align-items: center;
-                }
-                div.svgArandu{
-                    width: 70vw;
-                    margin-bottom: 10vh;
-                }
-                div.descricaoSobreNos{
-                    width: 250px;
-                }
-                div.containerSignificado{
-                    margin-top: -20vh;
-                    align-items: center;
-
-                }
-                div.cardsQuemSomos{
-                    display: grid;
-                    grid-column-gap: 40px;
-                    grid-row-gap: 40px;
-                    grid-template-columns: repeat(2, 1fr);
-                    margin-top: 10vh;
-                }
-                div.imagemCards{
-                    width: 25vw;
-                    height: 25vw
-                }
-                .swiper-navBtn{
-                    display: none;
-                }
-                .swiper {
-                    width: 60vw;
-                    height: 70vw;
-                    margin-top: 15vh;
-                }
-                div.cardMidias{
-                    margin-left: 30px;
-                    width: 40vw;
-                    height: 40vw;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                img.logoAranduFooter{
-                    width: 40vw;
-                    height: 12vw;
-                    margin-right: 30px;
-                    
-                }
-                div.rede{
-                    gap: 1vh;
-                    margin-bottom: 2vh;
-                }
-                h1.tituloContatos{
-                    font-size: 2.5em !important;
-                }
-                
-                main{
-                    scroll-snap-type: y mandatory;
-                    overflow-y: scroll;
-                    width: 100%;
-                    height: 100vh;
-                }
-                header{
-                    display: none;
-                }
-                .section{
-                    height: 100% !important;
-                }
-                p.segundaDescrição{
-                    display: none;
-                }
-                div.redesSociais{
-                    display: grid;
-                    grid-column-gap: 80px;
-                    grid-row-gap: 80px;
-                    grid-template-columns: repeat(2, 1fr);
-                    margin-top: -20vh;
-                }
-                div.containerSobreNos{
-                    height: 80vh;
-                    width: 70vw;
-                }
-                h1.tituloProjetos{
-                    font-size: 2em;
-                }
-                h1.tituloQuemSomos {
-                    font-size: 2em;
-                    margin-top: 15vh;
-                }
-    }
-    
-    
-    .section{
-        scroll-snap-align: start;
-        width: 100%;
-        height: 100vh;
-    
-    }
-    ::-webkit-scrollbar{
-        background-color: transparent;
-        width: 10px;
-    }
-    ::-webkit-scrollbar-thumb{
-        background-color: #353535;
-        border-radius: 20px;
+.bolaVermelha:hover,.bolaAmarela:hover, .bolaAzul:hover, .bolaVerde:hover{
+    transform: translateY(-10px);
+    transition: transform .9s ease;
 }
 
+div.container-card svg:hover{
+    transform: scale(1.3);
+}
+/* -------------------------- */
