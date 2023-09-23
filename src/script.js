@@ -66,6 +66,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     animaScroll();
 
+
+    
+
+
+
+
+
+
 });
 
 
@@ -174,3 +182,4 @@ const frase = document.querySelector('.frase-primeira_pagina')
 frase.addEventListener('animationend', () => {
     frase.classList.add('wrap')
 })
+

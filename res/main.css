@@ -7,6 +7,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+*::selection{
+    background-color: var(--vermelho_arandu);
+    color: var(--preto);
+}
+
 body{
     background-color: #161616;
 }
@@ -202,6 +207,7 @@ div.descricaoSobreNos p{
     color: var(--cor_fonte_subtitulo);
     text-align: justify;
 }
+
 div.containerSvg{
     transition: transform .8s ease;
 }
