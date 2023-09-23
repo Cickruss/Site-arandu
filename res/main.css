@@ -242,14 +242,14 @@ div.container-card div.card_projeto{
     display: flex;
     justify-content: end;
     align-items: start;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 div.container-card svg{
     width: var(--tamanho_medalha_projetos);
     position: relative;
     left: 25px;
     bottom: 25px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: transform .8s ease;
 }
 div.projetosEsquerdo #card-curumin{
@@ -349,6 +349,7 @@ div.container-footer > p{
     font-family: var(--familia_fonte_subtitulo);
     font-size: var(--tamanho_fonte_subtitulo);
     color: #333333;
+    cursor: default;
 }
 svg.svg-youtube:hover{
     fill: var(--vermelho_arandu);
